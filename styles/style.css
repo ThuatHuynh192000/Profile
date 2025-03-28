@@ -71,3 +71,9 @@ footer {
 #career {
     background-color: #eef7ff; /* Màu nền khác để phân biệt */
 }
+
+#about p[data-lang="location"] {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #444;
+}
