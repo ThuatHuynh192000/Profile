@@ -65,7 +65,7 @@ footer {
 #about p[data-lang="career"] {
     margin-top: 10px;
     font-style: italic;
-    color: #555;
+    color: #fff;
 }
 
 #career {
@@ -75,5 +75,5 @@ footer {
 #about p[data-lang="location"] {
     margin-top: 10px;
     /* font-weight: bold; */
-    color: #fff;
+    color: #444;
 }
