@@ -8,17 +8,9 @@ header {
 header h1 {
     color: #fff; /* Đảm bảo chữ có màu trắng để nổi bật trên nền xanh */
     font-size: 2.5em;
-}header {
-    background: #0078d7; /* Màu nền xanh */
-    color: #fff; /* Màu chữ trắng */
-    padding: 20px 0;
-    text-align: center;
 }
 
-header h1 {
-    color: #fff; /* Đảm bảo chữ có màu trắng để nổi bật trên nền xanh */
-    font-size: 2.5em;
-}body {
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -59,4 +51,13 @@ footer {
     background: #333;
     color: #fff;
     margin-top: 20px;
+}
+
+.physical-info {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.physical-info p {
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
 }
