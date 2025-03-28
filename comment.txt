@@ -1,3 +1,8 @@
 git add .
 git commit -m "Restructure project for GitHub Pages"
 git push
+
+
+
+git config --global user.name "Cncv2025"
+git config --global user.email "hoquy2025@gmail.com"

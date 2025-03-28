@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "about-title": "About Me",
             "about-content": "Hello! My name is Huỳnh Chánh Thuật",
             "contact-title": "Contact Information",
-            email: "Email: ",
-            github: "GitHub: ",
+            email: 'Email: <a href="mailto:Huynhchanhthuat19200088@gmail.com">Huynhchanhthuat19200088@gmail.com</a>',
+            github: 'GitHub: <a href="https://github.com/Cncv2025" target="_blank">github.com/Cncv2025</a>',
             footer: "&copy; 2025 [KSLP]HCT. All rights reserved."
         },
         vi: {
@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "about-title": "Về tôi",
             "about-content": "Xin chào! Tôi là Huỳnh Chánh Thuật",
             "contact-title": "Thông tin liên hệ",
-            email: "Email: ",
-            github: "GitHub: ",
+            email: 'Email: <a href="mailto:Huynhchanhthuat19200088@gmail.com">Huynhchanhthuat19200088@gmail.com</a>',
+            github: 'GitHub: <a href="https://github.com/Cncv2025" target="_blank">github.com/Cncv2025</a>',
             footer: "&copy; 2025 [KSLP]HCT. Tất cả các quyền được bảo lưu."
         }
     };
