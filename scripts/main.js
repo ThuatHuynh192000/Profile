@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentLang = "en";
 
-    // Hàm cập nhật nội dung trang
+   
     const updateContent = () => {
         document.querySelectorAll("[data-lang]").forEach((el) => {
             const key = el.getAttribute("data-lang");
@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Gọi hàm cập nhật khi trang tải
+    
     updateContent();
 
-    // Thay đổi ngôn ngữ khi nhấn nút
+    
     document.getElementById("toggle-lang").addEventListener("click", () => {
         currentLang = currentLang === "en" ? "vi" : "en";
         document.getElementById("toggle-lang").textContent =

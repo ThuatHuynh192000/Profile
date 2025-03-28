@@ -2,4 +2,4 @@ git config --global user.name "Thuathuynh1920000"
 git config --global user.email "huynhchanhthuat19200088@gmail.com"
 
 
-cd /c/Users/Administrator/Desktop/web-project
+cd /c/Users/Administrator/Desktop/Profile

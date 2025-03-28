@@ -1,12 +1,12 @@
 header {
-    background: #0078d7; /* Màu nền xanh */
-    color: #fff; /* Màu chữ trắng */
+    background: #0078d7; 
+    color: #fff; 
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    color: #fff; /* Đảm bảo chữ có màu trắng để nổi bật trên nền xanh */
+    color: #fff; 
     font-size: 2.5em;
 }
 
@@ -55,11 +55,11 @@ footer {
 
 .physical-info {
     display: flex;
-    gap: 20px; /* Khoảng cách giữa các phần tử */
+    gap: 20px; 
 }
 
 .physical-info p {
-    margin: 0; /* Loại bỏ khoảng cách mặc định */
+    margin: 0; 
 }
 
 #about p[data-lang="career"] {
@@ -69,7 +69,7 @@ footer {
 }
 
 #career {
-    background-color: #f9f9f9; /* Màu nền khác để phân biệt */
+    background-color: #f9f9f9; 
 }
 
 #about p[data-lang="location"] {
