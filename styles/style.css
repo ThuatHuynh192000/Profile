@@ -77,3 +77,20 @@ footer {
     /* font-weight: bold; */
     color: #444;
 }
+
+#qr-codes {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.qr-item {
+    margin: 20px 0;
+}
+
+.qr-item img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
