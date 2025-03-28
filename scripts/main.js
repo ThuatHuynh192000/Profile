@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "career-title": "Career Interests",
             "career-content": "Software Development, AI, and Web Design",
             "contact-title": "Contact Information",
+            "contact-link": "Go to Contact Page",
             email: 'Email: <a href="mailto:Huynhchanhthuat19200088@gmail.com">Huynhchanhthuat19200088@gmail.com</a>',
             github: 'GitHub: <a href="https://github.com/Cncv2025" target="_blank">github.com/Cncv2025</a>',
             footer: "&copy; 2025 [KSLP]HCT. All rights reserved."
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "career-title": "Sở thích nghề nghiệp",
             "career-content": "Phát triển phần mềm, AI, và Thiết kế web",
             "contact-title": "Thông tin liên hệ",
+            "contact-link": "Đi đến trang liên hệ",
             email: 'Email: <a href="mailto:Huynhchanhthuat19200088@gmail.com">Huynhchanhthuat19200088@gmail.com</a>',
             github: 'GitHub: <a href="https://github.com/Cncv2025" target="_blank">github.com/Cncv2025</a>',
             footer: "&copy; 2025 [KSLP]HCT. Tất cả các quyền được bảo lưu."
