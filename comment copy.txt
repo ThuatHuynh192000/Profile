@@ -1,0 +1,5 @@
+git config --global user.name "Cncv2025"
+git config --global user.email "hoquy2025@gmail.com"
+
+
+cd /c/Users/Administrator/Desktop/web-project
