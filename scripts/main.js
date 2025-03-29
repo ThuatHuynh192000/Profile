@@ -1,48 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Welcome to my personal website!");
 
-    const translations = {
-        en: {
-            welcome: "Welcome to My Personal Website",
-            "about-title": "About Me",
-            "about-content": "Hello! My name is Huỳnh Chánh Thuật",
-            dob: "Date of Birth: September 1, 2000",
-            gender: "Gender: Male",
-            location: "Location: Đak Nong, Vietnam",
-            height: "Height: 160 cm",
-            weight: "Weight: 60 kg",
-            job: "null",
-            interest: "null",
-            "career-title": "Career Interests",
-            "contact-title": "Contact Information",
-            "contact-link": "Go to Contact Page",
-            email: 'Email: <a href="mailto:Huynhchanhthuat19200088@gmail.com">Huynhchanhthuat19200088@gmail.com</a>',
-            github: 'GitHub: <a href="https://github.com/Cncv2025" target="_blank">github.com/Cncv2025</a>',
-            footer: "&copy; 2025 [KSLP]HCT. All rights reserved."
-        },
-        vi: {
-            welcome: "Chào mừng đến với trang web cá nhân của tôi",
-            "about-title": "Thông tin cơ bản",
-            "about-content": "Xin chào! Tôi là Huỳnh Chánh Thuật",
-            dob: "Ngày sinh: 1 tháng 9, 2000",
-            gender: "Giới tính: Nam",
-            location: "Nơi ở: Đắk Nông, Việt Nam",
-            height: "Chiều cao: 160 cm",
-            weight: "Cân nặng: 60 kg",
-            job: "null",
-            interest: "null",
-            "career-title": "Sở thích nghề nghiệp",
-            "contact-title": "Thông tin liên hệ",
-            "contact-link": "Đi đến trang liên hệ",
-            email: 'Email: <a href="mailto:Huynhchanhthuat19200088@gmail.com">Huynhchanhthuat19200088@gmail.com</a>',
-            github: 'GitHub: <a href="https://github.com/Cncv2025" target="_blank">github.com/Cncv2025</a>',
-            footer: "&copy; 2025 [KSLP]HCT. Tất cả các quyền được bảo lưu."
-        }
-    };
-
+    let translations = {};
     let currentLang = "en";
 
-   
+    // Tải nội dung từ tệp JSON
+    fetch("translations.json")
+        .then((response) => response.json())
+        .then((data) => {
+            translations = data;
+            updateContent(); // Cập nhật nội dung sau khi tải JSON
+        })
+        .catch((error) => console.error("Error loading translations:", error));
+
     const updateContent = () => {
         document.querySelectorAll("[data-lang]").forEach((el) => {
             const key = el.getAttribute("data-lang");
@@ -50,10 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    
-    updateContent();
-
-    
     document.getElementById("toggle-lang").addEventListener("click", () => {
         currentLang = currentLang === "en" ? "vi" : "en";
         document.getElementById("toggle-lang").textContent =
