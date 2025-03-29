@@ -4,12 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let translations = {};
     let currentLang = "en";
 
-    // Tải nội dung từ tệp JSON
     fetch("translations.json")
         .then((response) => response.json())
         .then((data) => {
             translations = data;
-            updateContent(); // Cập nhật nội dung sau khi tải JSON
+            updateContent(); 
         })
         .catch((error) => console.error("Error loading translations:", error));
 
