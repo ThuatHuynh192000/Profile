@@ -73,7 +73,7 @@ footer {
 }
 
 #about p[data-lang="location"] {
-    margin-top: 10px;
+    margin-top: 5px;
     /* font-weight: bold; */
     color: #444;
 }
@@ -93,8 +93,4 @@ footer {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#toggle-lang {
-    margin-top: -50px; /* Đẩy nút lên thêm 10px */
 }
