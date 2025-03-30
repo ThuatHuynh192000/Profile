@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Welcome to my personal website!");
 
     let translations = {};
-    let currentLang = "en";
+    let currentLang = "vi";
 
     fetch("translations.json")
         .then((response) => response.json())
