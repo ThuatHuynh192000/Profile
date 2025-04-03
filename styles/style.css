@@ -17,6 +17,12 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    opacity: 0; /* Bắt đầu với độ trong suốt */
+    transition: opacity 0.5s ease-in-out; /* Hiệu ứng mờ dần */
+}
+
+body.loaded {
+    opacity: 1; /* Hiển thị trang khi tải xong */
 }
 
 header {

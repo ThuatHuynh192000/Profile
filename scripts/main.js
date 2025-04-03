@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Welcome to my personal website!");
 
+    // Thêm lớp 'loaded' vào body để kích hoạt hiệu ứng
+    document.body.classList.add("loaded");
+
     let translations = {};
     let currentLang = "vi";
 
@@ -25,4 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
             currentLang === "en" ? "Switch to Vietnamese" : "Chuyển sang tiếng Anh";
         updateContent();
     });
+});
+
+window.addEventListener("beforeunload", () => {
+    document.body.style.opacity = "0"; // Mờ dần khi rời khỏi trang
 });
