@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
             currentLang === "en" ? "Switch to Vietnamese" : "Chuyển sang tiếng Anh";
         updateContent();
     });
+
+    document.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault(); // Ngăn chặn hành động mặc định
+            const href = link.getAttribute("href");
+            document.body.classList.add("unloading");
+            setTimeout(() => {
+                window.location.href = href; // Chuyển hướng sau khi hiệu ứng hoàn tất
+            }, 1000); // Thời gian trễ khớp với thời gian hiệu ứng (0.5s)
+        });
+    });
 });
 
 // Thêm hiệu ứng trượt khi rời khỏi trang
