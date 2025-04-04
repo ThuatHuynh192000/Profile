@@ -18,11 +18,17 @@ body {
     background-color: #f4f4f9;
     color: #333;
     opacity: 0; /* Bắt đầu với độ trong suốt */
-    transition: opacity 0.5s ease-in-out; /* Hiệu ứng mờ dần */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Hiệu ứng mờ dần và trượt */
+    transform: translateX(100%); /* Bắt đầu từ bên phải */
 }
 
 body.loaded {
     opacity: 1; /* Hiển thị trang khi tải xong */
+    transform: translateX(0); /* Trở về vị trí ban đầu */
+}
+
+body.unloading {
+    transform: translateX(-100%); /* Trượt sang bên trái */
 }
 
 header {

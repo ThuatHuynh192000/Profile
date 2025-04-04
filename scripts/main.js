@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Welcome to my personal website!");
 
-    // Thêm lớp 'loaded' vào body để kích hoạt hiệu ứng
+    // Thêm lớp 'loaded' vào body để kích hoạt hiệu ứng trượt khi tải trang
     document.body.classList.add("loaded");
 
     let translations = {};
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((response) => response.json())
         .then((data) => {
             translations = data;
-            updateContent(); 
+            updateContent();
         })
         .catch((error) => console.error("Error loading translations:", error));
 
@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Thêm hiệu ứng trượt khi rời khỏi trang
 window.addEventListener("beforeunload", () => {
-    document.body.style.opacity = "0"; // Mờ dần khi rời khỏi trang
+    document.body.classList.add("unloading");
 });
