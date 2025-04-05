@@ -110,3 +110,71 @@ footer {
 #toggle-lang {
     margin-top: -100px; 
 }
+
+/* Người que */
+#stickman {
+    position: fixed;
+    bottom: 20px;
+    left: -100px; /* Bắt đầu ngoài màn hình */
+    width: 50px;
+    height: 100px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+#stickman .head {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#stickman .body {
+    width: 5px;
+    height: 40px;
+    background-color: black;
+}
+
+#stickman .arm {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+}
+
+#stickman .arm.left {
+    transform: rotate(-45deg);
+    transform-origin: left;
+}
+
+#stickman .arm.right {
+    transform: rotate(45deg);
+    transform-origin: right;
+}
+
+#stickman .leg {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+}
+
+#stickman .leg.left {
+    transform: rotate(-30deg);
+    transform-origin: left;
+}
+
+#stickman .leg.right {
+    transform: rotate(30deg);
+    transform-origin: right;
+}
+
+/* Hiệu ứng đẩy */
+body.unloading #stickman {
+    transform: translateX(100vw); /* Người que đẩy trang sang phải */
+}
