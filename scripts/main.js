@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Welcome to my personal website!");
 
-    // Thêm lớp 'loaded' vào body để kích hoạt hiệu ứng trượt khi tải trang
     document.body.classList.add("loaded");
 
     let translations = {};
@@ -31,17 +30,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", (e) => {
-            e.preventDefault(); // Ngăn chặn hành động mặc định
+            e.preventDefault(); 
             const href = link.getAttribute("href");
             document.body.classList.add("unloading");
             setTimeout(() => {
-                window.location.href = href; // Chuyển hướng sau khi hiệu ứng hoàn tất
-            }, 1000); // Thời gian trễ khớp với thời gian hiệu ứng (0.5s)
+                window.location.href = href; 
+            }, 1000); 
         });
     });
 });
 
-// Thêm hiệu ứng trượt khi rời khỏi trang
 window.addEventListener("beforeunload", () => {
     document.body.classList.add("unloading");
 });

@@ -17,18 +17,18 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
-    opacity: 0; /* Bắt đầu với độ trong suốt */
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Hiệu ứng mờ dần và trượt */
-    transform: translateX(100%); /* Bắt đầu từ bên phải */
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateX(100%); 
 }
 
 body.loaded {
-    opacity: 1; /* Hiển thị trang khi tải xong */
-    transform: translateX(0); /* Trở về vị trí ban đầu */
+    opacity: 1; 
+    transform: translateX(0); 
 }
 
 body.unloading {
-    transform: translateX(-100%); /* Trượt sang bên trái */
+    transform: translateX(-100%);
 }
 
 header {
@@ -108,5 +108,5 @@ footer {
 }
 
 #toggle-lang {
-    margin-top: -100px; /* Đẩy nút lên thêm 10px */
+    margin-top: -100px; 
 }
